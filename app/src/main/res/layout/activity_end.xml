@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/playbackground"
+    >
+
+    <TextView
+        android:id="@+id/correct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correct : "
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/wrong"
+        android:layout_marginBottom="270sp"
+        android:background="@color/white"
+        />
+    <TextView
+        android:id="@+id/wrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wrong : "
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/correct"
+        app:layout_constraintRight_toLeftOf="@+id/longestStreak"
+        android:layout_marginBottom="270sp"
+        android:background="@color/white"
+        />
+    <TextView
+        android:id="@+id/longestStreak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longest Streak : "
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/wrong"
+        app:layout_constraintRight_toLeftOf="@+id/numberOfGuesses"
+        android:layout_marginBottom="270sp"
+        android:background="@color/white"
+        />
+    <TextView
+        android:id="@+id/finalScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score Grade : "
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="210sp"
+        android:background="@color/white"
+        />
+
+
+    <TextView
+        android:id="@+id/numberOfGuesses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Guesses : "
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/longestStreak"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="270sp"
+        android:background="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/userID"
+        android:layout_width="300sp"
+        android:layout_height="40sp"
+        android:background="@color/white"
+        android:tooltipText="Course / Section"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="30sp"
+        android:text=""
+        android:hint="ID Number :"
+        android:layout_marginLeft="300sp"
+        android:layout_marginBottom="150sp"
+
+        />
+
+
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="300sp"
+        android:layout_height="40sp"
+
+        android:background="@color/white"
+        android:text=""
+        android:hint="Name : "
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="140dp"
+        android:layout_marginRight="300dp"
+        />
+
+    <Button
+        android:id="@+id/one7"
+        android:layout_width="220sp"
+        android:layout_height="140sp"
+        android:textColor="@color/white"
+        android:onClick="goMainMenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:backgroundTint="@null"
+        android:background="@drawable/notpressedbutton"
+        android:layout_marginBottom="20sp"
+
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

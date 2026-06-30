@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="header_top_bottom">#35408f</color>
+    <color name="connector">#767e87</color>
+    <color name="top_bottom_yellow">#eecd3a</color>
+    <color name="mid_yellow">#fed41d</color>
+    <color name="black_background">#0f0f0f</color>
+    <color name="body_background">#f6f6f6</color>
+    <color name="content_background">#ffffff</color>
+    <color name="font_white">#ffffff</color>
+    <color name="font_yellow">#fed41d</color>
+    <color name="font_blue_header">#35418b</color>
+    <color name="font_blue">#387aad</color>
+
+    <color name="button_agree">#5bb85d</color>
+    <color name="button_register">#347ab6</color>
+    <color name="button_disagree">#b81d13</color>
+</resources>

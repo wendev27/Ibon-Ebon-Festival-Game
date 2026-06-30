@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/kingfisher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/kingfisher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BirdDance"
+        tools:targetApi="35">
+        <activity
+            android:name=".ComicsLoader2"
+            android:exported="false"
+            android:theme="@style/Theme.BirdDance"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".TutorialLoader"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ComicsLoader"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".returnMain"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".LoadingScreenGame"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".LoadingScreen"
+            android:exported="true"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GameActivity"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".End"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".LoadingScreenEnd"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+    </application>
+
+</manifest>

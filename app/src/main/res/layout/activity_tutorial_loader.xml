@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/playbackground">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <Button
+        android:id="@+id/skipp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@null"
+
+
+        android:onClick="skip"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:background="@color/button_agree"
+
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="20sp"
+
+        android:text="Start"
+       />
+
+</RelativeLayout>
